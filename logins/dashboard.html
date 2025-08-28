@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - The Cyan Empire</title>
+    <link rel="stylesheet" href="login_styles.css">
+    <link rel="icon" type="image/x-icon" href="../fav/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div id="dashboard-container" class="container slide-in" style="display: none;">
+        <h1 id="welcome-title" class="title">Loading...</h1>
+        <div class="form-group">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://mzuueravpxofrxlgngiy.supabase.co'; // Replace with your Supabase URL
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16dXVlcmF2cHhvZnJ4bGduZ2l5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzMzUxNjgsImV4cCI6MjA3MTkxMTE2OH0.G6y-RoKohJQkfQ9jSvFK_mh5VfpALwJ98Dve91qQxAs'; // Replace with your Anon Key
+
+        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        async function loadDashboard() {
+            const { data: { session } } = await supabase.auth.getSession();
+            if (!session) {
+                alert('No active session. Redirecting to login.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            const { data: profile, error } = await supabase
+                .from('profiles')
+                .select('username')
+                .eq('id', session.user.id)
+                .single();
+
+            if (error || !profile) {
+                alert('Failed to load profile. Redirecting to login.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            document.getElementById('welcome-title').textContent = `Welcome, ${profile.username}!`;
+            document.getElementById('dashboard-container').style.display = 'block';
+        }
+
+        async function logout() {
+            await supabase.auth.signOut();
+            window.location.href = 'login.html';
+        }
+
+        loadDashboard();
+    </script>
+</body>
+</html>

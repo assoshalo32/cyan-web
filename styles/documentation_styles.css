@@ -1,0 +1,32 @@
+html{
+    background-image: linear-gradient(90deg, rgb(123, 134, 143), rgb(30, 36, 41));
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+a, li{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 18px;
+    font-weight: bold;
+}
+.exit{
+    background-color: rgba(229, 230, 231, 0.212);
+    border-radius: 100px;
+    width: 40px;
+    margin: 1em 1em 0 0;
+    height: 40px;
+    text-align: center;
+    /* font-size: 20px; */
+    border: 0.3px aliceblue solid;
+    color: aliceblue;
+    cursor: pointer;
+}
+.bar{
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
+}

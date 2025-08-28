@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - The Cyan Empire</title>
+    <link rel="stylesheet" href="login_styles.css">
+    <link rel="icon" type="image/x-icon" href="../fav/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container slide-in">
+        <button id="back-button" onclick="window.location.href='../index.html'">←</button>
+
+        <!-- Registration Page -->
+        <div id="register-page" class="container slide-in">
+            <div class="title">Register - The Cyan Empire</div>
+            <form id="register-form">
+            <div class="form-group">
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="email" id="reg-email" placeholder="Email" required>
+                <input type="tel" id="reg-phone" placeholder="Phone Number" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <div id="reg-error" class="error"></div>
+            </div>
+        </form>
+            <div id="reg-error" class="error"></div>
+            <a href="#login" class="link" onclick="showLogin()">Already have an account? Login</a>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="container slide-in" style="display: none;">
+            <div class="title">Login - The Cyan Empire</div>
+            <form id="login-form">
+            <div class="form-group">
+                <input type="text" id="login-identifier" placeholder="Username, Email, or Phone" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <div id="login-error" class="error"></div>
+            </div>
+        </form>
+            <div id="login-error" class="error"></div>
+            <a href="#register" class="link" onclick="showRegister()">Don't have an account? Register</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

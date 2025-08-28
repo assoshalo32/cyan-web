@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cyan Commands</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index1.css">
+        <link rel="stylesheet" href="./styles/slide_in_from_left.css">
+        <link rel="stylesheet" href="styles/fadein.css">
+        <link rel="stylesheet" href="styles/buttons.css">
+        <link rel="icon" type="image/x-icon" href="../fav/favicon.ico">
+    </head>
+    <body>
+        <div class="bar slide1">
+            <button class="exit" onclick="window.location.href='../index.html'">←</button>
+        </div>
+        <a href="../index.html"><h1 class="main-dec slide1">Commands</h1></a>
+        <p id="bot-selection" class="main-dec slide1" style="font-weight: bold; margin-left: 18px;cursor: wait;">Select a bot...</p>
+        <div class="button-container slide1">
+        <button class="prefix-button slide-in slash" onclick="selectBot('Cyan Prime', '/')">Cyan Prime</button>
+        <button class="prefix-button slide-in ex" onclick="selectBot('Cyan Zero', '!')">Cyan Zero</button>
+        <button class="prefix-button slide-in dot" onclick="selectBot('Cyan Principle', '.')">Cyan Principle</button>
+        <button class="prefix-button slide-in hash" onclick="selectBot('Crimson One', '#')">Crimson One</button>
+        </div>
+    <div class="fadein" id="prefix-text" style="display: none;"></div>
+        <h3 class="main-dec slide2">Support</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./menu.html">menu</a></td>
+                <td><a href="./menu.html">Command list.</a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="./bot.html">bot</a></td>
+                <td><a href="./bot.html">Bot description.</a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="./support.html">support</a></td>
+                <td><a href="./support.html">Support us.</a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="./contact.html">contact</a></td>
+                <td><a href="./contact.html">Contact an admin.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./owner.html">owner</a></td>
+                <td><a href="./owner.html">Bot owner.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./feedback.html">feedback</a></td>
+                <td><a href="./feedback.html">Send your feedback.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./report.html">report</a></td>
+                <td><a href="./report.html">Report a bug.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./faq.html">faq</a></td>
+                <td><a href="./faq.html">Frequently asked questions.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./request.html">request</a></td>
+                <td><a href="./request.html">Make a request.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./donate.html">donate</a></td>
+                <td><a href="./donate.html">Send a donation.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Status</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./status.html">status</a></td>
+                <td><a href="./status.html">Bot status.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./ping.html">ping</a></td>
+                <td><a href="./ping.html">Latency check.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./uptime.html">uptime</a></td>
+                <td><a href="./uptime.html">Check uptime.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./date.html">date</a></td>
+                <td><a href="./date.html">Get the date and time of a city.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Simple Tools</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./compare.html">compare</a></td>
+                <td><a href="./compare.html">Compare two texts.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./html.html">html</a></td>
+                <td><a href="./html.html">Simple HTML tools.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./calc.html">calc</a></td>
+                <td><a href="./calc.html">Simple calculator.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./echo.html">echo</a></td>
+                <td><a href="./echo.html">Echo a message.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Random Tools</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./pick.html">pick</a></td>
+                <td><a href="./pick.html">Pick from a list.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./random.html">random</a></td>
+                <td><a href="./random.html">Random number between 1 and provided number.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./coin.html">coin</a></td>
+                <td><a href="./coin.html">Simulate a coin toss.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./dice.html">dice</a></td>
+                <td><a href="./dice.html">Simulate a dice roll.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./yesno.html">yesno</a></td>
+                <td><a href="./yesno.html">Yes or no.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./luckynumber.html">luckynumber</a></td>
+                <td><a href="./luckynumber.html">Your lucky number.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Games</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./chess.html">chess</a></td>
+                <td><a href="./chess.html">Play a chess game with friends.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./td.html">td</a></td>
+                <td><a href="./td.html">Truth or Dare.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./wyr.html">wyr</a></td>
+                <td><a href="./wyr.html">Would you rather?</a></td>
+            </tr>
+            <tr>
+                <td><a href="./memories.html">memories</a></td>
+                <td><a href="./memories.html">A game of memories.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./quiz.html">quiz</a></td>
+                <td><a href="./quiz.html">A simple quiz.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Misc</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./sentence.html">sentence</a></td>
+                <td><a href="./sentence.html">A random sentence.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./joke.html">joke</a></td>
+                <td><a href="./joke.html">A bit of humour.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./fact.html">facts</a></td>
+                <td><a href="./fact.html">A bit of knowledge.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./quote.html">quote</a></td>
+                <td><a href="./quote.html">A random quote.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Services</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./weather.html">weather</a></td>
+                <td><a href="./weather.html">Get the weather.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./news.html">news</a></td>
+                <td><a href="./news.html">Get the news.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./lyrics.html">lyrics</a></td>
+                <td><a href="./lyrics.html">Lyrics to your favorite songs.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./song.html">song</a></td>
+                <td><a href="./song.html">Play your favorite song.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./gpt.html">gpt</a></td>
+                <td><a href="./gpt">Ask AI anything.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./download.html">download</a></td>
+                <td><a href="./download.html">Download a video from a URL.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./image.html">image</a></td>
+                <td><a href="./image.html">Simple image tools.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./pins.html">pins</a></td>
+                <td><a href="./pins.html">Get pinterest iamges.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Whatsapp Tools</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./vv.html">vv</a></td>
+                <td><a href="./vv.html">Anti view-once.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./tosticker.html">tosticker</a></td>
+                <td><a href="./tosticker.html">Convert an image to a sticker.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./toimage.html">toimage</a></td>
+                <td><a href="./toimage.html">Convert a sticker to an image.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Interactions</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./hug.html"></a>hug</td>
+                <td><a href="./hug">Hug a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./kiss.html">kiss</a></td>
+                <td><a href="./kiss.html">Kiss a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./pat.html">pat</a></td>
+                <td><a href="./pat.html">Pat a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./wave.html">wave</a></td>
+                <td><a href="./wave.html">Wave at a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./spank.html">spank</a></td>
+                <td><a href="./spank.html">Spank a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./slap.html">slap</a></td>
+                <td><a href="./slap.html">Slap a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./cheer.html">cheer</a></td>
+                <td><a href="./cheer.html">Cheer for a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./cheerup.html">cheerup</a></td>
+                <td><a href="./cheerup.html">Cheer-up a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./like.html">like</a></td>
+                <td><a href="./like.html">Like a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./dislike.html">dislike</a></td>
+                <td><a href="./dislike.html">Dislike a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./punch.html">punch</a></td>
+                <td><a href="./punch.html">Punch a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./kill.html">kill</a></td>
+                <td><a href="./kill.html">Kill a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./happy.html">happy</a></td>
+                <td><a href="./happy.html">Be happy with a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./love.html">love</a></td>
+                <td><a href="./love.html">Love a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./sad">sad</a></td>
+                <td><a href="./sad.html">Be sad with a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./angry.html">angry</a></td>
+                <td><a href="./angry.html">Be angry with a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./worry.html">worry</a></td>
+                <td><a href="./worry.html">Be worried for a user.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Others</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./help.html">help</a></td>
+                <td><a href="./help.html">Help for a command.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./info.html">info</a></td>
+                <td><a href="./info.html">Bot information.</a></td>
+            </tr>
+        </table>
+        </table>
+        <h3 class="main-dec slide2">Group commands</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./menu_group.html">menu group</a></td>
+                <td><a href="./menu_group.html">Group command list.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./groupinfo.html">groupinfo</a></td>
+                <td><a href="./groupinfo.html">Get Group info.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./addadmin.html">admins</a></td>
+                <td><a href="./admins.html">List all admins.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./members.html">members</a></td>
+                <td><a href="./members.html">List all members.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./tag.html">tag</a></td>
+                <td><a href="./tag.html">Tag all members with a message.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./mute.html">mute</a></td>
+                <td><a href="./mute.html">Mute the bot in a group chat.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./del.html">del</a></td>
+                <td><a href="./del.html">Delete a message.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./changename.html">changename</a></td>
+                <td><a href="./changename.html">Change group name.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./changedesc.html">changedesc</a></td>
+                <td><a href="./changedesc.html">Change group description.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./welcome.html">welcome</a></td>
+                <td><a href="./welcome.html">Set a welcome message.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./goodbye.html">goodbye</a></td>
+                <td><a href="./goodbye.html">Set a goodbye message.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./antibad.html">antibad</a></td>
+                <td><a href="./antibad.html">Anti bad word.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./antilink.html">antilink</a></td>
+                <td><a href="./antilink.html">Anti link.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./kick.html">kick</a></td>
+                <td><a href="./kick.html">Remove a user from the group chat.</a></td>
+            </tr>
+        </table>
+        <h3 class="main-dec slide2">Bot admin commands</h3>
+        <table class="slide2">
+            <tr>
+                <td><a href="./menu_admin.html">menu admin</a></td>
+                <td><a href="./menu_admin.html">Bot admin command list.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./sleep.html">sleep</a></td>
+                <td><a href="./sleep.html">Put bot to sleep.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./mode.html">mode</a></td>
+                <td><a href="./mode.html">Toggles bot mode.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./announce.html">announce</a></td>
+                <td><a href="./announce.html">Announce a message to all group chats.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./leave.html">leave</a></td>
+                <td><a href="./leave.html">Force bot to leave a group chat.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./stop.html">stop</a></td>
+                <td><a href="./stop.html">Stops bot.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./ban.html">ban</a></td>
+                <td><a href="./ban.html">Ban a user.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./addadmin.html">addadmin</a></td>
+                <td><a href="./addadmin.html">Add an admin.</a></td>
+            </tr>
+            <tr>
+                <td><a href="./admin.html">admin</a></td>
+                <td><a href="./admin.html">Owner command menu.</a></td>
+            </tr>
+        </table><br>
+        <script src="scripts/buttons.js"></script>
+    </body>
+</html>

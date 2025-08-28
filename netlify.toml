@@ -1,0 +1,4 @@
+[build]
+  base = "logins/"
+  publish = "logins/"
+  functions = "logins/netlify/functions"

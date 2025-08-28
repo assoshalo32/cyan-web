@@ -1,0 +1,41 @@
+.drop-container{
+    width: 100%;
+    border: /*1px solid rgb(74, 74, 75);*/none;
+    text-align: left;
+    overflow: hidden;
+    background-color: rgb(56, 53, 53);
+}
+.drop-content{
+    max-height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 100px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+.drop-content.open{
+    max-height: 500px;
+    padding: 20px;
+}
+.cont-link{
+    text-decoration: none;
+    color: rgb(235, 232, 232);
+    padding: 10px;
+    margin: 20px 0 0 10px;
+    font-family: monospace;
+    font-size: 16px;
+}
+.drop-toggle{
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .drop-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cont-link{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+}

@@ -1,0 +1,22 @@
+.slide1 {
+    animation: slide-in 0.8s ease-out;
+}
+
+.slide2 {
+    animation: slide-in 1.2s ease-out;
+}
+
+.slide3 {
+    animation: slide-in 1.6s ease-out;
+}
+
+.slide4 {
+    animation: slide-in 2s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}

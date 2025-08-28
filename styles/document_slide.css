@@ -1,0 +1,50 @@
+.slide1 {
+    animation: slide-in 1.7s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+.slide2 {
+    animation: slide-in 2.2s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+.slide3 {
+    animation: slide-in 2.7s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+.slide4 {
+    animation: slide-in 3.1s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+.slide5 {
+    animation: slide-in 3.5s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
